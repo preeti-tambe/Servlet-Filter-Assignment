@@ -9,4 +9,23 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+   <servlet>
+    <servlet-name>me</servlet-name>
+    <servlet-class>MyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>me</servlet-name>
+    <url-pattern>/Serv</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+      <filter-name>my</filter-name>
+      <filter-class>MyFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+    <filter-name>my</filter-name>  
+    <url-pattern>/Serv</url-pattern>
+      
+  </filter-mapping>
 </web-app>
